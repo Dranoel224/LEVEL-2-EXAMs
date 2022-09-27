@@ -1,0 +1,12 @@
+THE SOFTWARE REQUIREMENT SPECCIFICATION DOCUMENT FOR BUILDING A SCIENTIFIC CALCULATOR IN REACT JS (FRONT END).
+
+This project will need setting up a scientific calculator user interface with the following buttons:
+- Numeric digits from 0 - 9;
+- The decimal point;
+- The mathematical operator buttons (+, -, /, *, %);
+- The button for the square-root;
+- The square button;
+- The sin, cos and tan buttons;
+
+Styling the elements to display a calculator facade.
+
