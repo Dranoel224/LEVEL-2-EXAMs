@@ -2,7 +2,7 @@ import Button from "../ui-elements/button";
 import Input from "../ui-elements/input";
 function SignUpForm() {
 
-    let isLoggedIn = true;
+    let isLoggedIn = false;
     //let username = isLoggedIn? isLoggedIn: false;
 
     const handleBackBtn = (event) => {

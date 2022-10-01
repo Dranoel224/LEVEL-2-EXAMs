@@ -1,11 +1,60 @@
-import {useState} from "react";
-import Wrapper from "./components/Wrapper";
-import Screen from "./components/Screen";
+import {useEffect, useState} from "react";
+import "./App.css"
+//import Wrapper from "./components/Wrapper";
+//import Screen from "./components/Screen";
 import ButtonBox from "./components/ButtonBox";
-import Button from "./components/Button";
+//import Button from "./components/Button";
 
 
-const App = () => {
+function App(){
+  
+  let [counter, setCounter, decCounter] = useState(0);
+
+  useEffect(() =>{
+  const interval = setInterval(() => {
+    if(counter >= 0){
+      setCounter((counter) => counter+1)
+    }else if(counter = 60){
+      decCounter((counter) => counter-5)
+    };
+   }, 1000);
+    console.log("incrementing counter")
+  return () => {
+    clearInterval(interval);
+  };
+}, []);
+
+
+  /*let [counter, setCounter] = useState(0)
+  setInterval((e) => {
+    let counter = 0;
+    if(counter <= 60){
+      setCounter((counter) => counter++);
+    };
+    console.log("incrementing counter")
+  }, 1000)
+  */
+
+  let decreaseCounter = () => {
+    //useState(60);
+    if(counter = 60){
+      setCounter(counter => counter-5);
+    };
+    console.log("decrementing counter")
+  }
+
+  return (<div className="countReturn">
+    <h1>COUNTER</h1>
+    <h3>{counter}</h3>
+    {/* <button className="incBtn" onClick={increaseCounter}>Increment Btn</button> */}
+    <button className="decCounter" onClick={decreaseCounter}>Decrement Btn</button>
+    </div>)
+}
+export default App;
+
+
+
+/*const App = () => {
   const btnValues = [
     ["C", "+-", "%", "/"],
     [7, 8, 9, "X"],
@@ -33,27 +82,12 @@ const App = () => {
         }
       </ButtonBox>
     </Wrapper>
-  );
-}
-export default App;
+  );*/
+//}
+//export default App;
 
 
-/*let [counter, setCounter] = useState(0)
-  let increaseCounter = () => {
-    if(counter <= 50){
-      setCounter(counter++);
-    };
-    console.log("incrementing counter")
-  }
-  }
 
-
-  let decreaseCounter = () => {
-    if(counter >= 0){
-      setCounter(counter--);
-    };
-    console.log("decrementing counter")
-  }*/
 
   
 /*
@@ -79,6 +113,9 @@ return (
   <button className="decBtn" onClick={decreaseCounter}>Decrement Btn</button>
   </div>
 )*/
+
+
+
   /*const increm =()=>{
     for(let i =0; i<=50; i++){
       {
@@ -138,6 +175,9 @@ const App = () => {
 };
 */
 
+
+
+
 /*import Wrapper from "./components/Wrapper";
 import Screen from "./components/Screen";
 import ButtonBox from "./components/ButtonBox";
@@ -159,41 +199,50 @@ const App = () => {
     </Wrapper>
   );
 };
+export default App;
 */
 
-
-
-/*import './App.css';
-import SignUpForm from './components/auth/signup';
-
-//import "./calculatorUI/css/calculator";
-
+/*
+import './App.css';
+import SignUpForm from './component/auth/signup';
 
 function App() {
 
   return (<div className='container'>
     <SignUpForm/>
     
-  </div>)*/
+  </div>)
+}
+export default App;
+*/
 
 
+
+/*
+  function App(){
   //return a page design
-  // return (<div className='container'>
-  //   <form className='form-container'>
-  //     <Input type="text" placeholder='username' />
-  //     <Input type="password" placeholder='password' />
-  //     <Input type="password" placeholder='confirm-password' />
+  return (<div className='container'>
+    <form className='form-container'>
+      <Input type="text" placeholder='username' />
+      <Input type="password" placeholder='password' />
+      <Input type="password" placeholder='confirm-password' />
 
-  //     <div className="btn-container">
-  //     <Button name="Back" classAttrib="btn back-btn" />
-  //     <Button name="Submit" classAttrib="btn submit-btn" />
-  //     </div>
+      <div className="btn-container">
+      <Button name="Back" classAttrib="btn back-btn" />
+      <Button name="Submit" classAttrib="btn submit-btn" />
+      </div>
 
-  //     {/* <Button name="Cross" classAttrib="btn to-next" /> */}
+      <Button name="Cross" classAttrib="btn to-next" />
 
-  //   </form>
-  // </div>)
-  //}
+    </form>
+  </div>)
+  }
+  export default App;
+  */
+
+
+
+
 
   /*function App() {
     /* return (

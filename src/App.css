@@ -174,3 +174,30 @@ section {
   transition: 2s ease-in;
   cursor: pointer;
 }
+/* The 30th September Test Counter Styles */
+.countReturn {
+  width: 250px;
+  height: 170px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(rgb(34, 5, 5), rgb(0, 36, 0), rgb(1, 1, 32), 0.8);
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px black;
+}
+
+.decCounter {
+  background: orange;
+  border-radius: 5px;
+  margin-top: 50px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 2px 3px blue;
+}
+
+.decCounter:hover {
+  background-color: greenyellow;
+}
