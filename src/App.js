@@ -1,29 +1,38 @@
-import {useEffect, useState} from "react";
-import "./App.css"
+import React, {useEffect, useState} from "react";
+import "./App.css";
+import SignUpForm from "./component/auth/signup";
+import Input from "./component/ui-elements/input";
+import Button from "./component/ui-elements/button";
+//import Profile from "./component/ui-elements/profile";
 //import Wrapper from "./components/Wrapper";
 //import Screen from "./components/Screen";
 import ButtonBox from "./components/ButtonBox";
 //import Button from "./components/Button";
+import userLogIn from "./component/pages/userLogIn";
+import userSignUp from "./component/pages/userSignUp";
+import navbar from "./component/pages/navbar";
+import Navbar from "./component/pages/navbar";
 
 
-function App(){
+
+
+// function App(){
   
-  let [counter, setCounter, decCounter] = useState(0);
+//   let [counter, setCounter, decCounter] = useState(0);
 
-  useEffect(() =>{
-  const interval = setInterval(() => {
-    if(counter >= 0){
-      setCounter((counter) => counter+1)
-    }else if(counter = 60){
-      decCounter((counter) => counter-5)
-    };
-   }, 1000);
-    console.log("incrementing counter")
-  return () => {
-    clearInterval(interval);
-  };
-}, []);
-
+//   useEffect(() =>{
+//   const interval = setInterval(() => {
+//     if(counter >= 0){
+//       setCounter((counter) => counter+1)
+//     }else if(counter = 60){
+//       decCounter((counter) => counter-5)
+//     };
+//    }, 1000);
+//     console.log("incrementing counter")
+//   return () => {
+//     clearInterval(interval);
+//   };
+// }, []);
 
   /*let [counter, setCounter] = useState(0)
   setInterval((e) => {
@@ -33,25 +42,25 @@ function App(){
     };
     console.log("incrementing counter")
   }, 1000)
-  */
+  
 
-  let decreaseCounter = () => {
-    //useState(60);
-    if(counter = 60){
-      setCounter(counter => counter-5);
-    };
-    console.log("decrementing counter")
-  }
+//   let decreaseCounter = () => {
+//     //useState(60);
+//     counter = 60?
+//       setCounter(counter => counter-5):"";
+//     ;
+//     console.log("decrementing counter")
+//   }
 
-  return (<div className="countReturn">
-    <h1>COUNTER</h1>
-    <h3>{counter}</h3>
-    {/* <button className="incBtn" onClick={increaseCounter}>Increment Btn</button> */}
-    <button className="decCounter" onClick={decreaseCounter}>Decrement Btn</button>
-    </div>)
-}
-export default App;
-
+//   return (<div className="countReturn">
+//     <h1>COUNTER</h1>
+//     <h3>{counter}</h3>
+    {/* <button className="incBtn" onClick={increaseCounter}>Increment Btn</button> }*/
+//     <button className="decCounter" onClick={decreaseCounter}>Decrement Btn</button>
+//     </div>)
+// }
+// export default App;
+// */
 
 
 /*const App = () => {
@@ -218,10 +227,11 @@ export default App;
 
 
 
-/*
+
   function App(){
   //return a page design
   return (<div className='container'>
+   <div>{<Navbar/>}</div>
     <form className='form-container'>
       <Input type="text" placeholder='username' />
       <Input type="password" placeholder='password' />
@@ -232,13 +242,13 @@ export default App;
       <Button name="Submit" classAttrib="btn submit-btn" />
       </div>
 
-      <Button name="Cross" classAttrib="btn to-next" />
+      {/* <Button name="Cross" classAttrib="btn to-next" /> */}
 
     </form>
   </div>)
   }
-  export default App;
-  */
+  export default App();
+  
 
 
 
@@ -351,3 +361,9 @@ export default App;
 export default App;*/
 
 
+/* 
+Books.map(book, index) =>{
+  return (<div key={index} >
+    <li><a href={urls[index]}>{book}</a></li>
+    </div>)
+} */

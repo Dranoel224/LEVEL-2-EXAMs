@@ -201,3 +201,12 @@ section {
 .decCounter:hover {
   background-color: greenyellow;
 }
+
+.navBar {
+  height: 30px;
+  width: 100%;
+  border: grey;
+  background-color: black;
+  color: white;
+}
+

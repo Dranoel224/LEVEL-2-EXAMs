@@ -1,0 +1,69 @@
+.field {
+    border: 1px solid black;
+    width: 300px;
+    margin: 10px;
+    padding: 1rem;
+    border-radius: 10px;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}
+
+.link_to_google{
+    border: 1px solid grey;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inp_ut1, .inp_ut2, .inp_ut3 {
+    width: 100%;
+    height: 30px;
+}
+
+.inp_ut4 {
+    margin-right: 10px;
+    display: inline;
+}
+
+.inp_ut5 a {
+    display: inline;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.i {
+    align-items: center;
+    justify-content: center;
+}
+
+.endSignUp {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

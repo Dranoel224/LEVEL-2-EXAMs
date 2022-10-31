@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function Input({ type, placeholder }) {
     const [inputVal, setInputVal] = useState('');
+    
     // const inputVal = useStateReturn[0];
     // const setInputVal = useStateReturn[1];
     // const {Zeldris, Victory, Mark} = {a:2, d:1, e:4}
