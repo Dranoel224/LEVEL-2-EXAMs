@@ -1,9 +1,12 @@
+import React, { useEffect, useState } from "react";
+
+
 let items = ["biscuits", "apple", "Oranges", "banana", "pineapple"];
-let boughtItem = {item:items[item]};
+let boughtItem = {item:items};
 let shoppingBasket = [];
 
 function SantaLuciaBasket(){
-    items.map((item) => {
+    items.map(() => {
 let loadedBasket =  shoppingBasket.push(boughtItem);
 
 console.log(loadedBasket);
