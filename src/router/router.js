@@ -14,6 +14,7 @@ import userSignUp from "../component/pages/userSignUp";
 import forgotPassword from "../component/pages/forgotPassword";
 import privacy from "../component/pages/privacy";
 import terms from "../component/pages/terms";
+import shoppingBasket from "../component/pages/shoppingBasket";
 
 const routes = [
      {path: "/",
@@ -54,6 +55,9 @@ const routes = [
 
     {path : "/terms",
     element : terms},
+
+    {path : "/shoppingBasket",
+    element : shoppingBasket},
 
     {path : "/privacy",
     element : privacy},

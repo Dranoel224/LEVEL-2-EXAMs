@@ -10,6 +10,9 @@
     justify-content: center;
     background-color: white;
     color: black;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .link_to_google{
